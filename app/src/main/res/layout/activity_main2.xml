@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ddraw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/main_toolbar"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:src="@drawable/images" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="467dp"
+            android:text="CHOOSE YOUR BEST NOVEL FROM THE MENU"
+            android:textStyle="italic"
+            android:textSize="50dp"
+            android:gravity="left"
+            android:textColor="#A91000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+        <include layout="@layout/main_nav_drawer"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
