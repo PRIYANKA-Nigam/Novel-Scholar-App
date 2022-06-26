@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="always"/>
+    <item
+        android:title="Search Meaning"
+        android:orderInCategory="101"
+        android:id="@+id/meaning"/>
+    <item
+        android:title="Check Pronounciation"
+        android:orderInCategory="102"
+        android:id="@+id/pronounciation"/>
+    <item
+        android:title="Add Note"
+        android:orderInCategory="103"
+        android:id="@+id/note"/>
+</menu>

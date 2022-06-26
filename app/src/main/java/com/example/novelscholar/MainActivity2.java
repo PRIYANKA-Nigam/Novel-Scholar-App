@@ -27,6 +27,28 @@ DrawerLayout drawerLayout;
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss(); }});builder.show(); }
+    public static void logout(final SummaryActivity summaryActivity) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(summaryActivity);builder.setTitle("Logout");
+        builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+                summaryActivity.finishAffinity(); System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss(); }});builder.show(); }
+    public static void logout(final Bookmark bookmark) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(bookmark);builder.setTitle("Logout");
+        builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+                bookmark.finishAffinity(); System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss(); }});builder.show(); }
     public static void logout(final MainActivity4 mainActivity4) {
         AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity4);builder.setTitle("Logout");
         builder.setMessage("Are You Sure You Want to Logout ?");

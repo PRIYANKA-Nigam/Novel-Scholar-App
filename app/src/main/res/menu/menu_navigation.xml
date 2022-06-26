@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/novel"
+        android:title="Story"
+        android:tooltipText="Novel Story"
+        android:icon="@drawable/summary"
+        />
+    <item android:id="@+id/summary"
+        android:title="Summary"
+        android:tooltipText="Novel Summary"
+        android:icon="@drawable/novel"
+
+        />
+    <item android:id="@+id/bookmark"
+        android:title="BookMark"
+        android:tooltipText="Novel Story"
+        android:icon="@drawable/bookmark"
+        />
+</menu>
