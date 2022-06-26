@@ -3,18 +3,28 @@ package com.example.novelscholar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import static com.example.novelscholar.MainActivity2.redirectActivity;
 
 public class SearchMeaning extends AppCompatActivity {
-DrawerLayout drawerLayout;
+DrawerLayout drawerLayout; Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_meaning);
         drawerLayout=(DrawerLayout)findViewById(R.id.sdraw);
+        button=(Button)findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(SearchMeaning.this, Meaning2.class);
+                startActivity(intent1);
+            }
+        });
     }
     public void ClickMenu(View view){
         MainActivity2.openDrawer(drawerLayout);

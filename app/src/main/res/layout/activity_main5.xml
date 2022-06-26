@@ -13,13 +13,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <include layout="@layout/main_toolbar"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Add Notes"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:gravity="center"/></LinearLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="333dp"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="252dp"
+            android:layout_gravity="center"
+            android:text="Click Me to Add Note"
+            android:textSize="30dp"
+            android:textStyle="bold" /></LinearLayout>
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"

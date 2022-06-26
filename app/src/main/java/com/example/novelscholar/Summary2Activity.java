@@ -70,17 +70,17 @@ public class Summary2Activity extends AppCompatActivity {
                 startActivity(intent1);
                 break;
             case R.id.meaning:
-//                Intent intent2 = new Intent(MainActivity.this, Item2.class);
-//                startActivity(intent2);
-//                break;
+                Intent intent2 = new Intent(Summary2Activity.this, Meaning.class);
+                startActivity(intent2);
+                break;
             case R.id.pronounciation:
-//                Intent intent3 = new Intent(MainActivity.this, Item3.class);
-//                startActivity(intent3);
-//                break;
+                Intent intent3 = new Intent(Summary2Activity.this, Pronounciation.class);
+                startActivity(intent3);
+                break;
             case R.id.note:
-//                Intent intent4 = new Intent(MainActivity.this, Item4.class);
-//                startActivity(intent4);
-//                break;
+                Intent intent4 = new Intent(Summary2Activity.this, Note.class);
+                startActivity(intent4);
+                break;
         }
         return super.onOptionsItemSelected(item); }
 }
