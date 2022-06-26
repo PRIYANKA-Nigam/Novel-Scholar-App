@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.novelscholar">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:exported="true"
@@ -10,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat">
-        <activity android:name=".Pronounciation3"></activity>
+        <activity android:name=".Note2Helper"></activity>
+        <activity android:name=".Pronounciation3" />
         <activity android:name=".Pronounciation2" />
         <activity android:name=".Pronounciation" />
         <activity android:name=".Note3" />
