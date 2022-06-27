@@ -58,7 +58,7 @@ public class Note2 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);
-        if (item.getItemId()==R.id.add){ Intent intent=new Intent(getApplicationContext(),Note2.class);
+        if (item.getItemId()==R.id.add){ Intent intent=new Intent(getApplicationContext(),Note2Helper.class);
             startActivity(intent);return true; }return false;
     }
 }

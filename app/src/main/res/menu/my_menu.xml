@@ -5,6 +5,10 @@
         android:title="Home"
         android:icon="@drawable/home"
         app:showAsAction="always"/>
+    <item android:id="@+id/globe"
+        android:title="Home"
+        android:icon="@drawable/globe"
+        app:showAsAction="always"/>
     <item
         android:title="Search Meaning"
         android:orderInCategory="101"
