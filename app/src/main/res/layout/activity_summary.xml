@@ -16,6 +16,7 @@
             android:id="@+id/rec"
             android:layout_width="396dp"
             android:layout_height="500dp"
+            android:padding="15dp"
             android:background="@color/yellow"
             android:scrollbars="vertical"
             tools:layout_editor_absoluteX="131dp"

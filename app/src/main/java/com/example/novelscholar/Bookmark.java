@@ -106,6 +106,11 @@ public class Bookmark extends AppCompatActivity {
                     return true;
                 case R.id.bookmark:
                     return true;
+                case R.id.audio:
+                    startActivity(new Intent(getApplicationContext(),AudioActivity.class));
+                    Toast.makeText(Bookmark.this,"Listen to the Novel Summary ...",Toast.LENGTH_LONG).show();
+                    overridePendingTransition(0,0);
+                    return true;
             }
             return false; }});
     }

@@ -9,7 +9,11 @@
         android:title="Summary"
         android:tooltipText="Novel Summary"
         android:icon="@drawable/novel"
-
+        />
+    <item android:id="@+id/audio"
+        android:title="Audio"
+        android:tooltipText="Summary Audio"
+        android:icon="@drawable/audio"
         />
     <item android:id="@+id/bookmark"
         android:title="BookMark"
