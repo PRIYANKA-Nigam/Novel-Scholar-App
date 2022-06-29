@@ -8,7 +8,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,7 +29,7 @@ import java.util.List;
 import static com.example.novelscholar.MainActivity2.redirectActivity;
 
 public class Bookmark extends AppCompatActivity {
-    Context context;DBHelper dbHelper;private ListView listView;private TextView textView;private Button button;
+    Context context;DBHelper dbHelper;private ListView listView;private TextView textView,textView2;private Button button;
     private List<Book> books;
     DrawerLayout drawerLayout;
     @Override
@@ -38,6 +41,8 @@ public class Bookmark extends AppCompatActivity {
         dbHelper=new DBHelper(context);
         listView=(ListView)findViewById(R.id.ll);
         textView=(TextView)findViewById(R.id.textView4);
+        textView2=(TextView)findViewById(R.id.te);
+        textView2.setSelected(true);
         button=(Button)findViewById(R.id.button);
         int count=dbHelper.countBooks();
         textView.setText("You have "+count +" books");
@@ -131,4 +136,5 @@ public class Bookmark extends AppCompatActivity {
     public void ClickLogout(View view){ MainActivity2.logout(this); }
     @Override
     protected void onPause() { super.onPause(); MainActivity2.closeDrawer(drawerLayout); }
+
 }

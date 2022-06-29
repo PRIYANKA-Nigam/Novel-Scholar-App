@@ -8,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -52,13 +53,18 @@ public class Note2 extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();
-        menuInflater.inflate(R.menu.add_note,menu);return super.onCreateOptionsMenu(menu);
+        menuInflater.inflate(R.menu.add_note,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);
         if (item.getItemId()==R.id.add){ Intent intent=new Intent(getApplicationContext(),Note2Helper.class);
-            startActivity(intent);return true; }return false;
+            startActivity(intent);
+            return true;
+        }
+        return false;
     }
+
 }

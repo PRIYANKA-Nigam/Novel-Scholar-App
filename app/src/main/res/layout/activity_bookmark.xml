@@ -16,14 +16,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/te"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
             android:textColor="@color/purple_500"
             android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:text="Novels Bookmarked"
+            android:text="Novels Bookmarked ...  Novels Bookmarked ..."
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:layout_gravity="center"
             android:textSize="25dp" />
     <ListView
         android:id="@+id/ll"

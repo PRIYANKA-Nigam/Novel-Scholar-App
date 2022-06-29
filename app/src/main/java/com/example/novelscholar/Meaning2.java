@@ -1,12 +1,17 @@
 package com.example.novelscholar;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -56,5 +61,20 @@ public class Meaning2 extends AppCompatActivity {
         DictionaryRequest dr=new DictionaryRequest(this,textView);
         url=dictionaryEntries();
         dr.execute(url);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {             //create menu bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.my_menu, menu);
+        return super.onCreateOptionsMenu(menu); }
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+
+            case R.id.globe:
+                Intent intent5 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+                startActivity(intent5);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

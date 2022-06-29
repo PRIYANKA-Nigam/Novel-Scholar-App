@@ -21,14 +21,16 @@
       android:orientation="vertical">
     <TextView
         android:id="@+id/tt"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:padding="10dp"
-        android:layout_height="wrap_content"
-        android:text="Listen to the Novel Summary"
+        android:layout_height="match_parent"
+        android:text="Listen to the Novel Summary ... Listen to the Novel Summary ..."
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:layout_gravity="center"
         android:textSize="25sp"
-        android:paddingBottom="10dp"
         android:textColor="#ff00ff"
-        android:gravity="center"
         android:textStyle="bold"/>
 
       <ListView

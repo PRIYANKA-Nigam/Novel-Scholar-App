@@ -4,8 +4,11 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -93,4 +96,6 @@ public class MainActivity3 extends AppCompatActivity {
     public void ClickLogout(View view){ MainActivity2.logout(this); }
      @Override
     protected void onPause() { super.onPause(); MainActivity2.closeDrawer(drawerLayout); }
+
+
 }

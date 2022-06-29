@@ -7,7 +7,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
@@ -84,4 +87,5 @@ public class SummaryActivity extends AppCompatActivity { DrawerLayout drawerLayo
     public void ClickLogout(View view){ MainActivity2.logout(this); }
     @Override
     protected void onPause() { super.onPause(); MainActivity2.closeDrawer(drawerLayout); }
+
 }

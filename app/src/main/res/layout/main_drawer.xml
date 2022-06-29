@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Novel Read"
+        android:text="Novel Scholar"
         android:textStyle="bold"
         android:layout_marginTop="7dp"
         android:textSize="30sp"
@@ -34,7 +34,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Novel Collection"
@@ -43,7 +43,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="1dp"
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
@@ -57,7 +57,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="164dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Search Meaning"
@@ -66,11 +66,11 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="1dp"
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_plagiarism_24" />
+            android:src="@drawable/ic_baseline_search_24" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,17 +78,19 @@
         android:layout_gravity="center_vertical"
         android:onClick="pronoun"
         android:orientation="horizontal">
+
         <TextView
-            android:layout_width="186dp"
-            android:layout_height="match_parent"
+            android:layout_width="171dp"
+            android:layout_height="47dp"
             android:layout_weight="1"
-            android:textSize="20dp"
             android:text="Check Pronounciation"
             android:textColor="#00ff00"
+            android:textSize="20dp"
             android:textStyle="bold" />
+
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="43dp"
+            android:layout_width="1dp"
+            android:layout_height="47dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:src="@drawable/ic_baseline_speaker_phone_24" />
@@ -102,7 +104,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="187dp"
+            android:layout_width="176dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Add Note"
@@ -111,7 +113,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="1dp"
             android:layout_height="43dp"
             android:layout_weight="1"
             android:layout_marginRight="8dp"
@@ -125,7 +127,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="186dp"
+            android:layout_width="181dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="About "
@@ -134,8 +136,8 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="43dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
             android:src="@drawable/ic_baseline_info_24" />
@@ -156,7 +158,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="190dp"
+            android:layout_width="184dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Rate the App"
@@ -165,11 +167,11 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="1dp"
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_star_half_24" />
+            android:src="@drawable/ic_baseline_star_rate_24" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -185,7 +187,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="201dp"
+            android:layout_width="188dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Logout"
@@ -194,7 +196,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="1dp"
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
