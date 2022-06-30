@@ -37,6 +37,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:orientation="vertical">
-        <include layout="@layout/main_drawer"/>
+        <include layout="@layout/main_nav_drawer"/>
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

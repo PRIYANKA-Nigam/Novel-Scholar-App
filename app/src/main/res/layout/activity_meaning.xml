@@ -15,4 +15,5 @@
         android:text="Click Me to see the Meaning of the word"
         android:textSize="30dp"
         android:textStyle="bold" />
+
 </RelativeLayout>

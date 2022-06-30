@@ -11,54 +11,66 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
     <include layout="@layout/main_toolbar"/>
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical">
-  <LinearLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="vertical">
-    <TextView
-        android:id="@+id/tt"
-        android:layout_width="wrap_content"
-        android:padding="10dp"
-        android:layout_height="match_parent"
-        android:text="Listen to the Novel Summary ... Listen to the Novel Summary ..."
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:singleLine="true"
-        android:layout_gravity="center"
-        android:textSize="25sp"
-        android:textColor="#ff00ff"
-        android:textStyle="bold"/>
 
-      <ListView
-          android:id="@+id/ll"
+      <LinearLayout
           android:layout_width="match_parent"
-          android:layout_height="450dp"
-          android:padding="10dp"
-          tools:layout_editor_absoluteX="247dp"
-          tools:layout_editor_absoluteY="287dp" /> </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="10"
-        android:layout_gravity="center"
-        android:layout_marginRight="5dp"
-        android:orientation="vertical">
-      <com.google.android.material.bottomnavigation.BottomNavigationView
-          android:id="@+id/bottom_navigation"
-          android:layout_width="398dp"
-          android:padding="15dp"
-          android:layout_gravity="center_horizontal"
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          app:itemBackground="@color/purple_500"
-          app:itemIconTint="@drawable/selector"
-          app:itemTextColor="@drawable/selector"
-          app:menu="@menu/menu_navigation" />
-    </LinearLayout> </LinearLayout> </LinearLayout>
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="512dp"
+            android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/tt"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:ellipsize="marquee"
+              android:marqueeRepeatLimit="marquee_forever"
+              android:padding="10dp"
+              android:singleLine="true"
+              android:text="Listen to the Novel Summary ... Listen to the Novel Summary ..."
+              android:textColor="#ff00ff"
+              android:textSize="25sp"
+              android:textStyle="bold" />
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/rec"
+              android:layout_width="375dp"
+              android:layout_height="450dp"
+              android:layout_alignParentStart="true"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="14dp"
+              android:clipToPadding="false"
+              android:overScrollMode="never"
+              android:paddingTop="1dp"
+              android:scrollbars="none"
+              app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+          <com.google.android.material.bottomnavigation.BottomNavigationView
+              android:id="@+id/bottom_navigation"
+              android:layout_width="398dp"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_gravity="center_horizontal"
+              android:padding="15dp"
+              app:itemBackground="@color/purple_500"
+              app:itemIconTint="@drawable/selector"
+              app:itemTextColor="@drawable/selector"
+              app:menu="@menu/menu_navigation" />
+        </LinearLayout>
+      </LinearLayout> </LinearLayout>
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"

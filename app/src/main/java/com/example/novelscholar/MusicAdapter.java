@@ -9,112 +9,102 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
+import java.util.List;
 
-public class MusicAdapter extends BaseAdapter {
-    private Context context;
-    private int layout;
-    private ArrayList<Music> musicArrayList;
+public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.My> {
+    Context context; int size; List<Music> list;
     private MediaPlayer mediaPlayer;
-    private boolean flag = true;
-
-    public MusicAdapter(Context context, int layout, ArrayList<Music> musicArrayList) {
+    private boolean flag=true;
+    public MusicAdapter(Context context, int size, List<Music> list) {
         this.context = context;
-        this.layout = layout;
-        this.musicArrayList = musicArrayList;
+        this.size = size;
+        this.list = list;
+    }
+
+    @NonNull
+    @Override
+    public MusicAdapter.My onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.songs_item_list,parent,false);
+        return new My(v);
     }
 
     @Override
-    public int getCount() {
-        return musicArrayList.size();
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return musicArrayList.get(position);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return 0;
-    }
-
-    @Override
-    public View getView(int position, View convertView, ViewGroup viewGroup) {
-        final ViewHolder viewHolder = new ViewHolder();
-        if (convertView == null) {
-            convertView = viewHolder.convertview;
-        } else {
-        }
-        final Music music = musicArrayList.get(position);
-        viewHolder.song.setText(music.getSongName());
-        viewHolder.textView_artist.setText(music.getArtist());
-        viewHolder.play.setOnClickListener(new View.OnClickListener() {
+    public void onBindViewHolder(@NonNull MusicAdapter.My holder, int position) {
+        final Music music=list.get(position);
+        holder.song.setText(music.getSongName());
+        holder.textView_artist.setText(music.getArtist());
+        holder.play.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if (flag) {
-                    mediaPlayer = MediaPlayer.create(context, music.getSongs());
-                    flag = false;
+            public void onClick(View view) {
+                if (flag){
+                    mediaPlayer=MediaPlayer.create(context,music.getSongs());
+                    flag=false;
                 }
-                if (mediaPlayer.isPlaying()) {
+                if (mediaPlayer.isPlaying()){
                     mediaPlayer.pause();
-                    viewHolder.play.setImageResource(R.drawable.play);
-                } else {
+                    holder.play.setImageResource(R.drawable.play);
+                }
+                else {
                     mediaPlayer.start();
-                    viewHolder.play.setImageResource(R.drawable.pause);
+                    holder.play.setImageResource(R.drawable.pause);
                 }
                 mediaPlayer.start();
             }
         });
-        viewHolder.pause.setOnClickListener(new View.OnClickListener() {
+        holder.pause.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if (!flag) {
+            public void onClick(View view) {
+                if(!flag){
                     mediaPlayer.stop();
                     mediaPlayer.release();
-                    flag = true;
+                    flag=true;
                 }
-                viewHolder.pause.setImageResource(R.drawable.pauses);
+                holder.pause.setImageResource(R.drawable.pauses);
             }
         });
-        viewHolder.back.setOnClickListener(new View.OnClickListener() {
+        holder.back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int pos = mediaPlayer.getCurrentPosition();
-                if (mediaPlayer.isPlaying() && pos > 5000) {
-                    pos -= 5000;
-                    mediaPlayer.seekTo(pos);
+                int pos=mediaPlayer.getCurrentPosition();
+                if(mediaPlayer.isPlaying() && pos>5000) {
+                    pos -= 5000; mediaPlayer.seekTo(pos);
                 }
             }
         });
-        viewHolder.front.setOnClickListener(new View.OnClickListener() {
+        holder.front.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int pos = mediaPlayer.getCurrentPosition();
-                if (mediaPlayer.isPlaying()) {
-                    pos += 5000;
-                    mediaPlayer.seekTo(pos);
+                int pos=mediaPlayer.getCurrentPosition();
+                if(mediaPlayer.isPlaying()) {
+                    pos += 5000; mediaPlayer.seekTo(pos);
                 }
             }
         });
-        return convertView;
     }
 
-    public class ViewHolder {
-        TextView song, textView_artist;
-        ImageView play, pause, back, front;
-        private View convertview;
-        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
 
-        public ViewHolder() {
-            convertview = layoutInflater.inflate(layout, null);
-            song = convertview.findViewById(R.id.tt2);
-            textView_artist = convertview.findViewById(R.id.tt3);
-            play = convertview.findViewById(R.id.img2);
-            pause = convertview.findViewById(R.id.img3);
-            back = convertview.findViewById(R.id.img4);
-            front = convertview.findViewById(R.id.img5);
-
+    public class My extends RecyclerView.ViewHolder {
+        TextView song,textView_artist;
+        ImageView play,pause,back,front;
+        CardView cardView;
+        public My(@NonNull View itemView) {
+            super(itemView);
+            song=itemView.findViewById(R.id.tt2);
+            textView_artist=itemView.findViewById(R.id.tt3);
+            play=itemView.findViewById(R.id.img2);
+            pause=itemView.findViewById(R.id.img3);
+            back=itemView.findViewById(R.id.img4);
+            front=itemView.findViewById(R.id.img5);
+            cardView=(CardView)itemView.findViewById(R.id.card);
         }
     }
 }

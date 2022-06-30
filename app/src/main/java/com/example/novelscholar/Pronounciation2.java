@@ -60,19 +60,5 @@ public class Pronounciation2 extends AppCompatActivity {
                     textView.setText(result.get(0)); }
                 break; }
     }
-    public boolean onCreateOptionsMenu(Menu menu) {             //create menu bar
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.my_menu, menu);
-        return super.onCreateOptionsMenu(menu); }
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
 
-            case R.id.globe:
-                Intent intent5 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
-                startActivity(intent5);
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

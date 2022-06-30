@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
@@ -38,18 +38,18 @@
 
             <TextView
                 android:id="@+id/tt2"
-                android:layout_width="111dp"
+                android:layout_width="306dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginStart="110dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="96dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="103dp"
                 android:text="Current Song"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -59,11 +59,11 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="110dp"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="129dp"
+                android:layout_marginStart="101dp"
+                android:layout_marginLeft="101dp"
+                android:layout_marginTop="136dp"
                 android:text="Artist"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 

@@ -25,37 +25,49 @@ public class Summary2Activity extends AppCompatActivity {
                 pdfView.fromAsset("halfGirl.pdf").load();
                 break;
             case 1:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-the_alchemist.pdf").load();
                 break;
             case 2:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-the_kite_runner.pdf").load();
                 break;
             case 3:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("the_diary_of_the_young_girl.pdf").load();
                 break;
             case 4:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("the_god_of_small_thing.pdf").load();
                 break;
             case 5:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-attitude.pdf").load();
                 break;
             case 6:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-gulliver.pdf").load();
                 break;
             case 7:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-one_night_at_the_call_centre.pdf").load();
                 break;
             case 8:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-three_mistakes.pdf").load();
                 break;
             case 9:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-pride_and_prejudice.pdf").load();
                 break;
             case 10:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-black_sheep.pdf").load();
                 break;
             case 11:
-                pdfView.fromAsset("halfGirl.pdf").load();
+                pdfView.fromAsset("SodaPDF-converted-the_monk.pdf").load();
+                break;
+            case 12:
+                pdfView.fromAsset("SodaPDF-converted-the_merchant_of.pdf").load();
+                break;
+            case 13:
+                pdfView.fromAsset("SodaPDF-converted-rich_dad.pdf").load();
+                break;
+            case 14:
+                pdfView.fromAsset("SodaPDF-converted-black_beauty.pdf").load();
+                break;
+            case 15:
+                pdfView.fromAsset("SodaPDF-converted-midnight_children.pdf").load();
                 break;
 
         }

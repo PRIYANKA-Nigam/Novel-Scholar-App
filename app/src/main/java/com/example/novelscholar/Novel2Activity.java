@@ -25,37 +25,49 @@ public class Novel2Activity extends AppCompatActivity {
                 pdfView.fromAsset("halfGirlFriend.pdf").load();
                 break;
             case 1:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("THE-ALCHEMIST-pdf-free-download.pdf").load();
                 break;
             case 2:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("The-Kite-Runner-PDF-booksfree.org_.pdf").load();
                 break;
             case 3:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("the_diary_of_a_young_girl.pdf").load();
                 break;
             case 4:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("the_god_of_small_thing_by_arundhati_roy.pdf").load();
                 break;
             case 5:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("attitude_is_everything.pdf").load();
                 break;
             case 6:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("Gullivers-Travels-Jonathan-Swift-www.indianpdf.com_-Download-eBook-Novel-Free-Online.pdf").load();
                 break;
             case 7:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("instapdf.in-chetan-bhagat-one-night-at-the-call-centre-414.pdf").load();
                 break;
             case 8:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("instapdf.in-chetan-bhagat-three-mistakes-of-my-life-895.pdf").load();
                 break;
             case 9:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("pride_and_prejudice.pdf").load();
                 break;
             case 10:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("black-sheep.pdf").load();
                 break;
             case 11:
-                pdfView.fromAsset("halfGirlFriend.pdf").load();
+                pdfView.fromAsset("The Monk who sold his ferrari - Robin Sharma (PDF) [Qwerty80].pdf").load();
+                break;
+            case 12:
+                pdfView.fromAsset("The-Merchant-of-Venice-PDF.pdf").load();
+                break;
+            case 13:
+                pdfView.fromAsset("Rich-Dad-Poor-Dad-eBook.pdf").load();
+                break;
+            case 14:
+                pdfView.fromAsset("black-beauty-anna-sewell.pdf").load();
+                break;
+            case 15:
+                pdfView.fromAsset("Magical Realism Reflected in the Salman Rushdie’s Novel Midnight’s Children 33 IJAMH-1084-SHABIR AHMAD.pdf").load();
                 break;
 
         }

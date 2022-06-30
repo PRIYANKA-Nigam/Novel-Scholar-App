@@ -33,14 +33,14 @@ public class MainActivity3 extends AppCompatActivity {
  DrawerLayout drawerLayout;
     RecyclerView.LayoutManager layoutManager;RecyclerView recyclerView;
     List<Model> list; Adapter adapter;
-    String[] text={"Gulliver's Travel","Attitude is Everything","Black Sheep","Boundaries when to say Yes",
-            "Call of Wild","Harry Potter and the Philospher's Stone","Growing up Spiritually",
-            "Half GirlFriend","One Indian Girl","Rich Dad Poor Dad","The Alchemist",
-            "The Monk who sold his Ferrari"
+    String[] text={"Half GirlFriend","The Alchemist","The Kite Runner","The Diary of a young Girl",
+            "The God of small thing","Attitude is Everything","Gulliver's Travel",
+            "One Night at the call centre","Three Mistakes of my Life","Pride & Prejudice","Black Sheep",
+            "The Monk who sold his Ferrari","The merchant of Venice" ,"Rich Dad Poor Dad","Black Beauty","Midnight Children"
     };
-    int[] image={R.drawable.half_girl, R.drawable.p1,R.drawable.half_girl, R.drawable.p1,R.drawable.half_girl, R.drawable.p1,
-            R.drawable.half_girl, R.drawable.p1,R.drawable.half_girl, R.drawable.p1,R.drawable.half_girl,
-            R.drawable.p1};
+    int[] image={R.drawable.half_girl, R.drawable.the_alchemist,R.drawable.the_kite_runner, R.drawable.the_diary,R.drawable.the_god, R.drawable.attitude,
+            R.drawable.gullivers_travel, R.drawable.one_night,R.drawable.mistakes, R.drawable.pride_and_prejudice,R.drawable.black_sheep,
+            R.drawable.the_monk, R.drawable.the_merchant_of_vanice, R.drawable.rich_dad,R.drawable.black_beauty,R.drawable.midnight};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
