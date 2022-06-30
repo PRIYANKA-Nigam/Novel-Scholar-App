@@ -69,6 +69,54 @@ public class Summary2Activity extends AppCompatActivity {
             case 15:
                 pdfView.fromAsset("SodaPDF-converted-midnight_children.pdf").load();
                 break;
+            case 16:
+                pdfView.fromAsset("SodaPDF-converted-wuthering.pdf").load();
+                break;
+            case 17:
+                pdfView.fromAsset("SodaPDF-converted-little_princess.pdf").load();
+                break;
+            case 18:
+                pdfView.fromAsset("the_alice.pdf").load();
+                break;
+            case 19:
+                pdfView.fromAsset("SodaPDF-converted-awaken_the_giant.pdf").load();
+                break;
+            case 20:
+                pdfView.fromAsset("SodaPDF-converted-love_never_fails.pdf").load();
+                break;
+            case 21:
+                pdfView.fromAsset("the_palace.pdf").load();
+                break;
+            case 22:
+                pdfView.fromAsset("the_great_gatsby.pdf").load();
+                break;
+            case 23:
+                pdfView.fromAsset("SodaPDF-converted-pilgrim_progress.pdf").load();
+                break;
+            case 24:
+                pdfView.fromAsset("joy_in_the_morning.pdf").load();
+                break;
+            case 25:
+                pdfView.fromAsset("little-women-001-part-1-chapter-1-playing-pilgrims.pdf").load();
+                break;
+            case 26:
+                pdfView.fromAsset("the_prince.pdf").load();
+                break;
+            case 27:
+                pdfView.fromAsset("the_wedding_date.pdf").load();
+                break;
+            case 28:
+                pdfView.fromAsset("beloved.pdf").load();
+                break;
+            case 29:
+                pdfView.fromAsset("One_hundred.pdf").load();
+                break;
+            case 30:
+                pdfView.fromAsset("SodaPDF-converted-to_kill_a_mocking_bird.pdf").load();
+                break;
+            case 31:
+                pdfView.fromAsset("midnight_library.pdf").load();
+                break;
 
         }
     }

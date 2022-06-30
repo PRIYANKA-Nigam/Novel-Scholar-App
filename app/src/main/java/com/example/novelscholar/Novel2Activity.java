@@ -69,6 +69,54 @@ public class Novel2Activity extends AppCompatActivity {
             case 15:
                 pdfView.fromAsset("Magical Realism Reflected in the Salman Rushdie’s Novel Midnight’s Children 33 IJAMH-1084-SHABIR AHMAD.pdf").load();
                 break;
+            case 16:
+                pdfView.fromAsset("119-2014-04-09-Wuthering Heights.pdf").load();
+                break;
+            case 17:
+                pdfView.fromAsset("a-little-princess-001-chapter-1-sara.pdf").load();
+                break;
+            case 18:
+                pdfView.fromAsset("Alice_in_Wonderland.pdf").load();
+                break;
+            case 19:
+                pdfView.fromAsset("awaken_the_giant_within.pdf").load();
+                break;
+            case 20:
+                pdfView.fromAsset("Love Never Fails By Kenneth E. Hagin ( PDFDrive ).pdf").load();
+                break;
+            case 21:
+                pdfView.fromAsset("The Palace of Illusions by Chitra Banerjee Divakaruni.pdf").load();
+                break;
+            case 22:
+                pdfView.fromAsset("The-Great-Gatsby.pdf").load();
+                break;
+            case 23:
+                pdfView.fromAsset("the-pilgrim-s-progress-en.pdf").load();
+                break;
+            case 24:
+                pdfView.fromAsset("joy_in_the_morning_by_mary_raymond_shipman_andrews.pdf").load();
+                break;
+            case 25:
+                pdfView.fromAsset("little-women.pdf").load();
+                break;
+            case 26:
+                pdfView.fromAsset("The Prince and the Dressmaker.pdf").load();
+                break;
+            case 27:
+                pdfView.fromAsset("The-Wedding-Date-pdf-free-download.pdf").load();
+                break;
+            case 28:
+                pdfView.fromAsset("Beloved_by_Toni_Morrison.pdf").load();
+                break;
+            case 29:
+                pdfView.fromAsset("One Hundred Years of Solitude ( PDFDrive ).pdf").load();
+                break;
+            case 30:
+                pdfView.fromAsset("To Kill A Mockingbird - Full Text PDF.pdf").load();
+                break;
+            case 31:
+                pdfView.fromAsset("The-Midnight-Library-PDF.pdf").load();
+                break;
 
         }
     }
