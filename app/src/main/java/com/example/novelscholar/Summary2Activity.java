@@ -117,6 +117,39 @@ public class Summary2Activity extends AppCompatActivity {
             case 31:
                 pdfView.fromAsset("midnight_library.pdf").load();
                 break;
+            case 32:
+                pdfView.fromAsset("a_paasage_to_india.pdf").load();
+                break;
+            case 33:
+                pdfView.fromAsset("obstacle.pdf").load();
+                break;
+            case 34:
+                pdfView.fromAsset("SodaPDF-converted-boundaries.pdf").load();
+                break;
+            case 35:
+                pdfView.fromAsset("SodaPDF-converted-lord_of_the_flies.pdf").load();
+                break;
+            case 36:
+                pdfView.fromAsset("SodaPDF-converted-nine.pdf").load();
+                break;
+            case 37:
+                pdfView.fromAsset("SodaPDF-converted-praying_to_get_results.pdf").load();
+                break;
+            case 38:
+                pdfView.fromAsset("SodaPDF-converted-sacred_game.pdf").load();
+                break;
+            case 39:
+                pdfView.fromAsset("Theroadtosuccsess-Chapterand2.pdf").load();
+                break;
+            case 40:
+                pdfView.fromAsset("SodaPDF-converted-the_fault_in_our_stars.pdf").load();
+                break;
+            case 41:
+                pdfView.fromAsset("SodaPDF-converted-the_women_in_white.pdf").load();
+                break;
+            case 42:
+                pdfView.fromAsset("SodaPDF-converted-the_age_of_innocense.pdf").load();
+                break;
 
         }
     }

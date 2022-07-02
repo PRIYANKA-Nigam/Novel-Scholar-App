@@ -17,6 +17,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.novelscholar.Music;
+import com.example.novelscholar.MusicAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -73,6 +75,17 @@ public class AudioActivity extends AppCompatActivity { DrawerLayout drawerLayout
         my_main_list.add(new Music("One Hundred Years of Solitude","Gabriel García Márquez",R.raw.one_hundred));
         my_main_list.add(new Music("To Kill a mocking Bird","Harper Lee",R.raw.kill_a_mocking_bird));
         my_main_list.add(new Music("Midnight Library","Matt Haig",R.raw.midnight_library));
+        my_main_list.add(new Music("A Passage to India","E.M. Forster",R.raw.a_paasage_to_india));
+        my_main_list.add(new Music("The Obstacle is the Way","Ryan Holiday",R.raw.the_obstacle));
+        my_main_list.add(new Music("Boundaries","Henry Cloud",R.raw.boundaries_summary));
+        my_main_list.add(new Music("Lord of the Flies","William Golding",R.raw.lord));
+        my_main_list.add(new Music("1984","George Orwell",R.raw.nine));
+        my_main_list.add(new Music("Praying to get Results","Kenneth E. Hagin",R.raw.praying_to_get_results));
+        my_main_list.add(new Music("Sacred Games","Vikram Chandra",R.raw.sacred_game));
+        my_main_list.add(new Music("The Road to Success","Napoleon Hill",R.raw.sacred_game));
+        my_main_list.add(new Music("The Fault in our stars","John Green",R.raw.the_fault_in_our_stars));
+        my_main_list.add(new Music("The Women in white","Wilkie Collins",R.raw.the_women_in_white));
+        my_main_list.add(new Music("The age of Innocence","Edith Wharton",R.raw.the_age_of_innocense));
         recyclerView.setAdapter(musicAdapter);
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.audio);

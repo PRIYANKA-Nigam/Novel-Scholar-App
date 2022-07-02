@@ -117,6 +117,39 @@ public class Novel2Activity extends AppCompatActivity {
             case 31:
                 pdfView.fromAsset("The-Midnight-Library-PDF.pdf").load();
                 break;
+            case 32:
+                pdfView.fromAsset("a passage to india ( PDFDrive ).pdf").load();
+                break;
+            case 33:
+                pdfView.fromAsset("16-05-2021-051456The-Obstacle-Is-the-Way.pdf").load();
+                break;
+            case 34:
+                pdfView.fromAsset("Boundaries.pdf").load();
+                break;
+            case 35:
+                pdfView.fromAsset("Lord of the Flies PDF ( PDFDrive ).pdf").load();
+                break;
+            case 36:
+                pdfView.fromAsset("Orwell-1949 1984.pdf").load();
+                break;
+            case 37:
+                pdfView.fromAsset("Praying-to-Get-Results-by-Kenneth-E-Hagin-pdf.pdf").load();
+                break;
+            case 38:
+                pdfView.fromAsset("sacred_games-vikram_chandra.pdf").load();
+                break;
+            case 39:
+                pdfView.fromAsset("Signs-Posts-on-the-Road-to-Success-Kenyon.pdf").load();
+                break;
+            case 40:
+                pdfView.fromAsset("the_fault_in_our_stars.pdf").load();
+                break;
+            case 41:
+                pdfView.fromAsset("woman-in-white.pdf").load();
+                break;
+            case 42:
+                pdfView.fromAsset("the_age_of_innocence.pdf").load();
+                break;
 
         }
     }
