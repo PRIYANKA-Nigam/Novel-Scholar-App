@@ -32,6 +32,7 @@
         android:layout_height="49dp"
         android:layout_gravity="center_vertical"
         android:onClick="ClickNovel"
+        android:background="@color/yellow"
         android:orientation="horizontal">
 
         <TextView
@@ -39,7 +40,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Novel Collection"
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -48,12 +49,13 @@
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_menu_book_24" />
+            android:src="@drawable/a" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:onClick="ClickSearch"
+        android:background="@android:color/darker_gray"
         android:layout_gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -62,7 +64,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Search Meaning"
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -71,12 +73,13 @@
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_search_24" />
+            android:src="@drawable/bb" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
         android:layout_gravity="center_vertical"
+        android:background="@color/blue"
         android:onClick="ClickPronounciation"
         android:orientation="horizontal">
 
@@ -85,7 +88,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Check Pronounciation"
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold" />
         <ImageView
@@ -93,13 +96,14 @@
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_speaker_phone_24" />
+            android:src="@drawable/c" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:layout_marginTop="5dp"
         android:onClick="ClickNote"
+        android:background="@color/purple_200"
         android:layout_gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -108,7 +112,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Add Note"
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -117,12 +121,13 @@
             android:layout_height="43dp"
             android:layout_weight="1"
             android:layout_marginRight="8dp"
-            android:src="@drawable/ic_baseline_note_add_24" />
+            android:src="@drawable/d" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:onClick="ClickAbout"
+        android:background="@android:color/holo_red_dark"
         android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
@@ -131,7 +136,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="About "
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -140,7 +145,7 @@
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_info_24" />
+            android:src="@drawable/e" />
     </LinearLayout>
 
     <View
@@ -154,6 +159,7 @@
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:onClick="ClickRate"
+        android:background="@android:color/holo_blue_bright"
         android:layout_gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -162,7 +168,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Rate the App"
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -171,7 +177,7 @@
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_star_rate_24" />
+            android:src="@drawable/f" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -184,6 +190,7 @@
         android:layout_width="match_parent"
         android:layout_height="49dp"
         android:onClick="ClickLogout"
+        android:background="@color/purple_700"
         android:orientation="horizontal">
 
         <TextView
@@ -191,7 +198,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Logout"
-            android:textColor="#00ff00"
+            android:textColor="#000000"
             android:textSize="25dp"
             android:textStyle="bold" />
 
@@ -200,6 +207,6 @@
             android:layout_height="43dp"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_baseline_power_settings_new_24" />
+            android:src="@drawable/g" />
     </LinearLayout>
 </LinearLayout>

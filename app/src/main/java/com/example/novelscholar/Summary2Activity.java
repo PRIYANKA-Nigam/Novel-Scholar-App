@@ -150,7 +150,12 @@ public class Summary2Activity extends AppCompatActivity {
             case 42:
                 pdfView.fromAsset("SodaPDF-converted-the_age_of_innocense.pdf").load();
                 break;
-
+            case 43:
+                pdfView.fromAsset("sense_and_sensibility (1).pdf").load();
+                break;
+            case 44:
+                pdfView.fromAsset("beautiful_disaster.pdf").load();
+                break;
         }
     }
     public boolean onCreateOptionsMenu(Menu menu) {             //create menu bar

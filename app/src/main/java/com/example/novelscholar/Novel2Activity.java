@@ -150,6 +150,12 @@ public class Novel2Activity extends AppCompatActivity {
             case 42:
                 pdfView.fromAsset("the_age_of_innocence.pdf").load();
                 break;
+            case 43:
+                pdfView.fromAsset("sense_and_sensibility.pdf").load();
+                break;
+            case 44:
+                pdfView.fromAsset("Beautiful Disaster - Jamie McGuire.pdf").load();
+                break;
 
         }
     }

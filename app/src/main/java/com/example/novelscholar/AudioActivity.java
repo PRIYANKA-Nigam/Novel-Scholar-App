@@ -86,6 +86,8 @@ public class AudioActivity extends AppCompatActivity { DrawerLayout drawerLayout
         my_main_list.add(new Music("The Fault in our stars","John Green",R.raw.the_fault_in_our_stars));
         my_main_list.add(new Music("The Women in white","Wilkie Collins",R.raw.the_women_in_white));
         my_main_list.add(new Music("The age of Innocence","Edith Wharton",R.raw.the_age_of_innocense));
+        my_main_list.add(new Music("Sense and Sensibility","Jane Austen",R.raw.sense));
+        my_main_list.add(new Music("Beautiful Disaster","Jamie McGuire",R.raw.beautiful_disaster));
         recyclerView.setAdapter(musicAdapter);
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.audio);

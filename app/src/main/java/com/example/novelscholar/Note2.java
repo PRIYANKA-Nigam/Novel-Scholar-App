@@ -63,7 +63,7 @@ public class Note2 extends AppCompatActivity {
         if (item.getItemId()==R.id.add){ Intent intent=new Intent(getApplicationContext(),Note2Helper.class);
             startActivity(intent);
             return true;
-        }
+           }
         return false;
     }
 

@@ -34,7 +34,7 @@ public class SummaryActivity extends AppCompatActivity { DrawerLayout drawerLayo
             "The Prince And the Dressmaker" ,"The Wedding Date", "Beloved","One Hundred years of Solitude",
             "To Kill a Mocking Bird","Midnight Library" ,"A Passage to India","The Obstacle is the way",
             "Boundaries","Lord of the Flies","1984","Praying to get Results","Sacred Games","The Road to Success",
-            "The Fault in our Stars","The Women in White","The age of innocence"};
+            "The Fault in our Stars","The Women in White","The age of innocence","Sense and Sensibility","Beautiful Disaster"};
     int[] image={R.drawable.half_girl, R.drawable.the_alchemist,R.drawable.the_kite_runner, R.drawable.the_diary,R.drawable.the_god, R.drawable.attitude,
             R.drawable.gullivers_travel, R.drawable.one_night,R.drawable.mistakes, R.drawable.pride_and_prejudice,R.drawable.black_sheep,
             R.drawable.the_monk, R.drawable.the_merchant_of_vanice, R.drawable.rich_dad,R.drawable.black_beauty,R.drawable.midnight ,
@@ -42,7 +42,8 @@ public class SummaryActivity extends AppCompatActivity { DrawerLayout drawerLayo
             ,R.drawable.the_great,
             R.drawable.plimgrims, R.drawable.joy ,R.drawable.little_women ,R.drawable.the_prince ,R.drawable.wedding ,R.drawable.beloved
             , R.drawable.one_hundred ,R.drawable.kill ,R.drawable.library ,R.drawable.india,R.drawable.obstacle,R.drawable.boundaries,R.drawable.lord,
-            R.drawable.nine,R.drawable.praying,R.drawable.sacred,R.drawable.the_road,R.drawable.the_fault,R.drawable.the_women,R.drawable.the_age};
+            R.drawable.nine,R.drawable.praying,R.drawable.sacred,R.drawable.the_road,R.drawable.the_fault,R.drawable.the_women,R.drawable.the_age,
+    R.drawable.sense,R.drawable.beautiful};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
