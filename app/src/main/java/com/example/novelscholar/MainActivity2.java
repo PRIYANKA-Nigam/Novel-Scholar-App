@@ -9,14 +9,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity2 extends AppCompatActivity {
 DrawerLayout drawerLayout; ImageView f1,f2,f3,f4,f5,f6;
