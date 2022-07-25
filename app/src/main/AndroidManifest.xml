@@ -53,7 +53,8 @@
             android:name=".MainActivity4"
             android:parentActivityName=".MainActivity2" />
         <activity android:name=".MainActivity3" />
-        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity2" android:supportsPictureInPicture="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"></activity>
     </application>
 
 </manifest>

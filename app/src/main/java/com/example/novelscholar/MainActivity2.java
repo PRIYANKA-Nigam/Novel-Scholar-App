@@ -3,6 +3,7 @@ package com.example.novelscholar;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.PictureInPictureParams;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
@@ -141,6 +142,12 @@ DrawerLayout drawerLayout; ImageView f1,f2,f3,f4,f5,f6;
         animator=ObjectAnimator.ofFloat(f5,"translationY",1000f);
         animator.setDuration(5000);
         animator.start();
+    }
+    @Override
+    public void onUserLeaveHint () {
+        PictureInPictureParams pictureInPictureParams= new PictureInPictureParams.Builder().build();
+        enterPictureInPictureMode(pictureInPictureParams);
+
     }
     public void ClickMenu(View view){
         openDrawer(drawerLayout);

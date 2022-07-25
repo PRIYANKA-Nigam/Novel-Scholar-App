@@ -2,6 +2,7 @@ package com.example.novelscholar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.PictureInPictureParams;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -42,4 +43,5 @@ TextView t; Animation animation;
         };
         timer.start();
     }
+
 }
