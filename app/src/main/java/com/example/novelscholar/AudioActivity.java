@@ -88,6 +88,8 @@ public class AudioActivity extends AppCompatActivity { DrawerLayout drawerLayout
         my_main_list.add(new Music("The age of Innocence","Edith Wharton",R.raw.the_age_of_innocense));
         my_main_list.add(new Music("Sense and Sensibility","Jane Austen",R.raw.sense));
         my_main_list.add(new Music("Beautiful Disaster","Jamie McGuire",R.raw.beautiful_disaster));
+        my_main_list.add(new Music("The old man and the Sea","Ernest Hemingway",R.raw.the_old_man_and_the_sea___summary));
+        my_main_list.add(new Music("The Curious incident of the dog in the night time","Mark Haddon",R.raw.curious_dog));
         recyclerView.setAdapter(musicAdapter);
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.audio);

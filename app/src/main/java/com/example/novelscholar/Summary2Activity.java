@@ -156,6 +156,12 @@ public class Summary2Activity extends AppCompatActivity {
             case 44:
                 pdfView.fromAsset("beautiful_disaster.pdf").load();
                 break;
+            case 45:
+                pdfView.fromAsset("the_old_man_and_the_sea___summary.pdf").load();
+                break;
+            case 46:
+                pdfView.fromAsset("sodapdf-converted.pdf").load();
+                break;
         }
     }
     public boolean onCreateOptionsMenu(Menu menu) {             //create menu bar

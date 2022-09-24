@@ -156,7 +156,12 @@ public class Novel2Activity extends AppCompatActivity {
             case 44:
                 pdfView.fromAsset("Beautiful Disaster - Jamie McGuire.pdf").load();
                 break;
-
+            case 45:
+                pdfView.fromAsset("old_man.pdf").load();
+                break;
+            case 46:
+                pdfView.fromAsset("the_dog_in_night.pdf").load();
+                break;
         }
     }
     public boolean onCreateOptionsMenu(Menu menu) {             //create menu bar
